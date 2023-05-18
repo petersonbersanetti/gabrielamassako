@@ -1,0 +1,49 @@
+.apresentacao{
+    margin: 1em 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.apresentacao, .apresentacao_sociais{
+    font-style: var(--fonte-secundaria);
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.apresentacao__titulo{
+    color: var(--verde-um);
+    font-weight: 400;
+}
+
+.container__titulo--negrito{
+    font-weight: 700;
+}
+
+.paddingsecreto{
+    padding-top: 1em;
+}
+
+.apresentacao__texto{
+    color: var(--verde-um);
+    font-weight: 400;
+}
+
+
+.container__imagem{
+    padding: 1em 0.5em;
+    width: 50px;
+}
+
+.apresentacao_sociais{
+    margin: 0 0.5em;
+    text-align: center;
+}
+
+.img__gabriela{
+    padding-top: 1em;
+    width: 100%;
+}

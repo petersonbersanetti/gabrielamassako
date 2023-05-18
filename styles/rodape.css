@@ -1,0 +1,14 @@
+hr{
+    margin: 0;
+}
+
+.rodape{
+    bottom: 0;
+    left: 0;
+    padding: 1em 0;
+    background-color: var(--verde-um);
+    color: var(--verde-quatro);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}

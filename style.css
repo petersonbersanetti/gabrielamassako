@@ -1,0 +1,22 @@
+@import url("styles/header.css");
+@import url("styles/body.css");
+@import url("styles/rodape.css");
+:root{
+    --gradiente-verde: linear-gradient(322deg, #40513B 5%, #EDF1D6 50%);
+    --verde-sombra: #2e3a2a;
+    --verde-um: #40513B;
+    --verde-dois: #609966;
+    --verde-tres: #9DC08B;
+    --verde-quatro: #EDF1D6; 
+    --fonte-primaria: 'Josefin Sans', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    /* max-height:100% !important;
+    overflow:hidden; */
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--gradiente-verde)
+}

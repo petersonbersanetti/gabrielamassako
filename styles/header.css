@@ -1,0 +1,95 @@
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 40px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho{
+    background-color: var(--verde-um);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* libera a opcao de por outros atributos top left right */
+    box-shadow: 0px 4px 4px 1px var(--verde-sombra);
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 1em;
+    padding-right: 1.5em;
+    color: var(--verde-quatro);
+}
+
+.titulo{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-items: flex-start;
+ flex-direction: column;
+}
+
+.container__titulo{
+  padding-left: 1em;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--verde-quatro);
+}
+
+.container__titulo-sub{
+  padding-left: 1.3em;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--verde-tres)
+}
+
+.lista-menu {
+    display: none;
+    position: absolute; /* permite q movimenta o elemento de acordo com o pai que tenha position diferente de static */
+    top: 100%;
+    right: 0;
+    width: 40vw;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu__item{
+  text-align: right;
+  padding: 1em;
+  background-color: var(--verde-um);
+}
+
+.lista-menu__link{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--verde-quatro);
+}
+
+.container__botao{
+    display: none;    
+}
+
+.container__texto{
+  display: none;
+}
+
+.container__botao:checked~.container__rotulo > .cabecalho__menu-hamburguer{
+  background-image: url(../img/Menu_Aberto.svg);
+}
+
+.container__botao:checked~.container__rotulo {
+   background: var(--verde-tres);
+   box-shadow:1px 0px 10px 2px var(--verde-um) inset
+}
+
+
